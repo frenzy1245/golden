@@ -767,7 +767,7 @@ body{
     position: relative;
 }
 
-.basement_log{
+.basement_log{ 
     width: 20%;
     list-style: none;
     justify-content: space-around;
