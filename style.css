@@ -12,7 +12,7 @@ body{
 .header{
     width: 100%;
     height: 75px;
-    background-color: gray;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -136,6 +136,8 @@ body{
     height: 100px;
     background-image: url(images/korzina.png);
     border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 
@@ -146,6 +148,8 @@ body{
     height: 100px;
     background-image: url(images/laptop.png);
     border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .img3{
@@ -155,6 +159,8 @@ body{
     height: 100px;
     background-image: url(images/lock.png);
     border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .serv_tip li{
@@ -824,10 +830,4 @@ body{
 
 
 
-
-/* ############################ */
-/* ############################ */
-/* ############################ */
-/* ############################ */
-/* ############################ */
 
