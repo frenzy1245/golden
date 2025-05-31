@@ -1,11 +1,14 @@
 body{
     margin: 0;
+    padding: 0;
 }
 
 .home{
     width:100% ;
-    height: 500px;
+    height: 100vh;
     background-image: url(images/header_backgr.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     margin: 0px;
 }
 
@@ -40,7 +43,7 @@ body{
 
 .main{
     margin:0;
-    margin-top: 50px;
+    margin-top: 25vh;
     color: white;
 }
 
@@ -78,23 +81,23 @@ body{
     
 }
 
-
-.serv{
-    margin-top: 80px;
-    font-family: Arial, Helvetica, sans-serif;
-
-
-    
+.services {
+    height: 50vh;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
-
-
+.serv{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 70px;
+}
 
 .serv1{
     font-weight: 700;
-    font-size: 35px;
+    font-size: 3rem;
     text-align: center;
-    margin-bottom: 0;
-
+    margin: 0;
 }
 
 .serv2{
@@ -119,47 +122,42 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
     font-weight: 700;
-    
-}
-
-
-.serv_tip li{
     text-align: center;
 }
 
 
 .img1{
-    display: flex;
-    justify-content: space-between;
-    width: 100px;
-    height: 100px;
-    background-image: url(images/korzina.png);
+    width: 80px;
+    height: 80px;
+    border: 3px solid #FDD136;
+    background-image: url(./images/korzina.png);
     border-radius: 50%;
     background-repeat: no-repeat;
     background-position: center;
+    object-fit: contain;
 }
 
 
 .img2{
-    display: flex;
-    justify-content: space-between;
-    width: 100px;
-    height: 100px;
-    background-image: url(images/laptop.png);
+    width: 80px;
+    height: 80px;
+    border: 3px solid #FDD136;
+    background-image: url(./images/laptop.png);
     border-radius: 50%;
     background-repeat: no-repeat;
     background-position: center;
+    object-fit: contain;
 }
 
 .img3{
-    display: flex;
-    justify-content: space-between;
-    width: 100px;
-    height: 100px;
-    background-image: url(images/lock.png);
+    width: 80px;
+    height: 80px;
+    border: 3px solid #FDD136;
+    background-image: url(./images/lock.png);
     border-radius: 50%;
     background-repeat: no-repeat;
     background-position: center;
+    object-fit: contain;
 }
 
 .serv_tip li{
@@ -342,24 +340,6 @@ body{
     margin: auto;
 }
 
-.background_line{
-    background-color: lightgray;
-    position: absolute;
-    left: 49.9%;
-    right: 49.89%;
-    top: 20%;
-    bottom: 10%;
-
-}
-
-.txt_left{
-    margin-right: 15px;
-}
-
-.txt_right{
-    margin-left: 15px;
-}
-
 .main_list{
     width: 100%;
     display: flex;
@@ -403,36 +383,51 @@ body{
     text-align: left;
 }
 
-.about_img{
+.about_img {
     width: 200px;
     height: 200px;
     border-radius: 50%;
+    position: relative;
+    margin: 0 20px;
+}
+.about_img::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 150px;
+    background: lightgrey;
+    left: 50%;
+    bottom: -150px;
+}
+
+.about_img:last-child::after {
+    display: none;
 }
 
 
 .about_id_1{
-    background-image: url(./Images/about1.png);
+    background-image: url(./images/about1.png);
     background-size: 105%;
     border: 3px solid lightgray;
     background-repeat: no-repeat;
     background-position: center;
 }
 .about_id_2{
-    background-image: url(./Images/about2.png);
+    background-image: url(./images/about2.png);
     background-size: 105%;
     border: 3px solid lightgray;
     background-repeat: no-repeat;
     background-position: center;
 }
 .about_id_3{
-    background-image: url(./Images/about3.png);
+    background-image: url(./images/about3.png);
     background-size: 105%;
     border: 3px solid lightgray;
     background-repeat: no-repeat;
     background-position: center;
 }
 .about_id_4{
-    background-image: url(./Images/about4.png);
+    background-image: url(./images/about4.png);
     background-size: 105%;
     border: 3px solid lightgray;
     background-repeat: no-repeat;
@@ -455,6 +450,7 @@ body{
 
 .our_team{
     height: 40rem;
+    background-color: #F9F9F9;
 }
 
 .team_Title{
@@ -538,25 +534,25 @@ body{
 /*  */
 
 .logo_twitter{
-    background-image: url(./Images/w_twitter.png);
+    background-image: url(./images/w_twitter.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .logo_google{
-    background-image: url(./Images/w_google.png);
+    background-image: url(./images/w_google.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .logo_facebook{
-    background-image: url(./Images/w_facebook.png);
+    background-image: url(./images/w_facebook.png);
     background-size: cover;
     background-repeat: no-repeat;
 
 }
 .logo_p{
-    background-image: url(./Images/w_p.png);
+    background-image: url(./images/w_p.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -564,19 +560,19 @@ body{
 
 
 .logo_twitter:hover{
-    background-image: url(./Images/b_twitter.png);
+    background-image: url(./images/b_twitter.png);
 }
 
 .logo_google:hover{
-    background-image: url(./Images/g+.png);
+    background-image: url(./images/g+.png);
 }
 
 .logo_facebook:hover{
-    background-image: url(./Images/facebook.png);
+    background-image: url(./images/facebook.png);
 
 }
 .logo_p:hover{
-    background-image: url(./Images/p.png);
+    background-image: url(./images/p.png);
 }
 
 /*  */
@@ -609,7 +605,7 @@ body{
 }
 
 .partners_logos1{
-    background-image: url(./Images/envato.png);
+    background-image: url(./images/envato.png);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -617,7 +613,7 @@ body{
 
 
 .partners_logos2{
-    background-image: url(./Images/WorldPress.png);
+    background-image: url(./images/WorldPress.png);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -625,14 +621,14 @@ body{
 
 
 .partners_logos3{
-    background-image: url(./Images/ae_tuts.png);
+    background-image: url(./images/ae_tuts.png);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
 }
 
 .partners_logos4{
-    background-image: url(./Images/Microlancer.png);
+    background-image: url(./images/Microlancer.png);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -648,7 +644,7 @@ body{
     align-items: center;
     margin: auto;
     flex-direction: column;
-    background-image: url(./Images/map.png);
+    background-image: url(./images/map.png);
     background-position-x: 60rem;
     background-position-y: top;
     background-repeat: no-repeat;
@@ -675,7 +671,6 @@ body{
 }
 
 .polya{
-    height: 80%;
     width: 70%;
     display: flex;
     justify-content: center;
@@ -694,6 +689,9 @@ body{
     height: 80px;
     width: 480px;
     margin-bottom: 20px;
+}
+.left_pole input {
+    outline: none;
 }
 
 .inputSubject{
@@ -742,26 +740,28 @@ body{
 
 .big_message{
     resize: none;
-    height: 90%;
+    height: 100%;
     width: 100%;
+    outline: none;
     border-radius: 15px;
     font-size: 1.2em;
     font-weight: 600;
     text-transform: uppercase;
     color: gray;
     padding: 15px;
+    box-sizing: border-box;
 }
 
 .button{
-    border-radius: 5%;
-    height: 13%;
-    width: 15%;
-    margin: 3%;
+    border-radius: 10px;
     background-color: goldenrod;
     text-transform: uppercase;
     font-size: 1.3em;
     font-weight: 600;
     color: white;
+    padding: 20px 50px;
+    margin: 20px;
+    margin-bottom: 70px;
 }
 
 /* ######################## */
@@ -770,6 +770,7 @@ body{
     height: 7rem;
     width: 100%;
     position: relative;
+    background-color: #fff;
 }
 
 .basement_log{ 
@@ -787,46 +788,42 @@ body{
 }
 
 .basement_logo1{
-    background-image: url(./Images/b_twitter.png);
+    background-image: url(./images/b_twitter.png);
     background-size: 95%;
     background-repeat: no-repeat;
 }
 
 .basement_logo2{
-    background-image: url(./Images/b_facebook.png);
+    background-image: url(./images/b_facebook.png);
     background-size: 95%;
     background-repeat: no-repeat;
 }
 
 .basement_logo3{
-    background-image: url(./Images/b_p.png);
+    background-image: url(./images/b_p.png);
     background-size: 95%;
     background-repeat: no-repeat;
 }
 
 .basement_logo4{
-    background-image: url(./Images/b_google.png);
+    background-image: url(./images/b_google.png);
     background-size: 95%;
     background-repeat: no-repeat;
 }
 
 .basement_logo1:hover{
-    background-image: url(./Images/twitter.png);
+    background-image: url(./images/twitter.png);
 }
 
 .basement_logo2:hover{
-    background-image: url(./Images/facebook.png);
+    background-image: url(./images/facebook.png);
     background-size: 97%;
 }
 
 .basement_logo3:hover{
-    background-image: url(./Images/p.png);
+    background-image: url(./images/p.png);
 
 }
 .basement_logo4:hover{
-    background-image: url(./Images/g+.png);
+    background-image: url(./images/g+.png);
 }
-
-
-
-
